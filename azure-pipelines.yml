@@ -8,7 +8,6 @@ trigger:
 
 pool:
   name: Azure Pipelines
-  demands: Agent.Name -equals Hosted Agent
   vmImage: windows-latest
 
 steps:
