@@ -7,7 +7,7 @@ trigger:
 - main #pipeline will use this branch
 
 pool:
-  vmImage: ubuntu-latest #vmImage means Microsoft-hosted Agent; ubuntu-latest means using Linux Agent Ubuntu
+  name: Default
 
 steps:
 - task: Maven@3
