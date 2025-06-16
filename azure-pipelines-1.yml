@@ -8,7 +8,10 @@ trigger:
 
 pool:
  name: default
- demands: Agent.name -equals W11ENT22H2 and -equals KopiSuse
+## demands: Agent.name -equals W11ENT22H2 and -equals KopiSuse
+
+strategy:
+ parallel: 2
 
 steps:
 - script: echo Hello, world!
