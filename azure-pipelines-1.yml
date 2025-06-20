@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
- name: VMSS-Kopi-AgentPool
+ name: VMSS-Win10-AgentPool
 ## demands: Agent.name -equals W11ENT22H2 and -equals KopiSuse
 
 strategy:
