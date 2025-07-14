@@ -1,20 +1,14 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - main
 
 pool:
- name: vmss-win10-14jul
-## demands: Agent.name -equals W11ENT22H2 and -equals KopiSuse
+  name: vmss-win10-14jul
 
 strategy:
- parallel: 10
+  parallel: 9  # Set to 9 to match the number of VMSS machines
 
 steps:
-- script: echo Hello, world!
+- script: echo Hello from $(Agent.Name)
   displayName: 'Run a one-line script'
 
 - script: |
