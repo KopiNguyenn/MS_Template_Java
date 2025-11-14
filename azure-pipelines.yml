@@ -7,10 +7,7 @@ trigger:
 - main #pipeline will use this branch
 
 pool:
-  name: "Self-Hosted Kopi Machine"
-  demands:
-  - Agent.name -equals Kopi-SelfHosted-Machine
-  
+  name: "Self-Hosted Kopi Machine"  
 
 steps:
 - script: echo 'suy thannnnnnnn'
